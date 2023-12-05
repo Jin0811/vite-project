@@ -17,4 +17,12 @@ export default defineConfig({
 			"@": path.resolve("./src"),
 		},
 	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				javascriptEnabled: true,
+				additionalData: '@import "./src/assets/style/variable.scss";', // scss全局变量
+			},
+		},
+	},
 });

@@ -9,8 +9,11 @@ import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 // Svg
 import "virtual:svg-icons-register";
 
-// 注册全局组件
+// 全局组件
 import globalComponents from "@/plugins/globalComponents.ts";
+
+// 全局样式
+import "@/assets/style/index.scss";
 
 const app = createApp(App);
 app.use(ElementPlus, { locale: zhCn });
