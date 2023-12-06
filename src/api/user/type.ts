@@ -1,10 +1,10 @@
 // 登录请求数据
-export interface loginRequestData {
+export type loginRequestData = {
 	password: string;
 	username: string;
-}
+};
 
 // 登录响应数据
-export interface loginResponseData {
+export type loginResponseData = {
 	token: string;
-}
+};
