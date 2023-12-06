@@ -1,7 +1,3 @@
 <template>
-	<div>
-		<SvgIcon name="refresh" color="red"></SvgIcon>
-	</div>
+	<router-view></router-view>
 </template>
-
-<script setup lang="ts"></script>

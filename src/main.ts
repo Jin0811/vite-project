@@ -15,8 +15,12 @@ import globalComponents from "@/plugins/globalComponents.ts";
 // 全局样式
 import "@/assets/style/index.scss";
 
+// 路由
+import router from "@/router/index";
+
 const app = createApp(App);
 app.use(ElementPlus, { locale: zhCn });
 app.use(globalComponents);
+app.use(router);
 
 app.mount("#app");
