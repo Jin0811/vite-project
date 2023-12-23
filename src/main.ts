@@ -18,9 +18,13 @@ import "@/assets/style/index.scss";
 // 路由
 import router from "@/router/index";
 
+// Pinia
+import store from "@/store";
+
 const app = createApp(App);
 app.use(ElementPlus, { locale: zhCn });
 app.use(globalComponents);
 app.use(router);
+app.use(store);
 
 app.mount("#app");
